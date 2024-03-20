@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Croque calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="page">
+        <p class="mobile">Enkel op desktop beschikbaar</p>
+        <header class="desktop">
+            <h1>Croque calculator</h1>
+            <form action="#">
+                <div class="headerPart">
+                    <label for="nameField">Wie eet mee?</label>
+                <input type="text" name="nameField" id="nameField">
+                </div>
+                <div class="headerPart headerPartBtn">
+                    <button id="addPeople">Voeg toe</button>
+                </div>
+            </form>
+        </header>
+        <main class="desktop">
+            <section id="requirements" class="hidden">
+                <h2>Benodigdheden</h2>
+                <ul>
+                    <li><span id="breadAmount"></span> sneden brood (<span id="fullBreads"></span> broden)</li>
+                    <li><span id="cheeseAmount"></span> sneden kaas</li>
+                    <li><span id="hamAmount"></span> sneden hesp</li>
+                </ul>
+            </section>
+            <section>
+                <form action="#" id="namelist">
+                    <h2>Personen</h2>
+                    <div id="nameList--text">
+                    </div>
+                    <div class="buttonBox">
+                        <button id="calculateBtn" type="submit">Bereken</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+    <script src="js/addPeople.js"></script>
+    <script src="js/calculate.js"></script>
+</body>
+</html>
